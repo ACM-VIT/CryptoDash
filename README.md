@@ -1,6 +1,6 @@
 <h1 align="center"><a href="https://organize.mlh.io/participants/events/4390-kickstarting-hacktoberfest-with-acm-vit">Kicking Off Hacktoberfest with ACM-VIT!</a></h1>
 <p align="center">
-<img src="https://raw.githubusercontent.com/Malika01/hacktoberfest-readme/master/Final.png">
+<img src="https://raw.githubusercontent.com/RohanKhatua/crypto_dash/master/assets/ForktoberBanner.png">
 </p>
 
 <h2 align="center"> Crypto Dash </h2>
@@ -73,5 +73,5 @@ git merge
 ---
 ## Authors
 
-**Authors:** <!-- [author1's name](link to their github profile), [author2's name](link to their github profile) .. -->  
-**Contributors:** <!-- Generate contributors list using this link - https://contributors-img.web.app/preview -->
+**Authors:** [Rohan Khatua](https://github.com/RohanKhatua)  
+<!-- **Contributors:** Generate contributors list using this link - https://contributors-img.web.app/preview -->
