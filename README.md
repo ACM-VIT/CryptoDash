@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://organize.mlh.io/participants/events/4390-kickstarting-hacktoberfest-with-acm-vit">Kicking Off Hacktoberfest with ACM-VIT!</a></h1>
+<h1 align="center>Kicking Off Hacktoberfest with ACM-VIT!</h1>
 <p align="center">
 <img src="https://raw.githubusercontent.com/RohanKhatua/crypto_dash/master/assets/ForktoberBanner.png">
 </p>
@@ -6,10 +6,10 @@
 <h2 align="center"> Crypto Dash </h2>
 
 <p align="center"> 
-The Crypto Dash app allows you to keep track of the performance of various popular cryptocurrencies and track their price over time.
+The Crypto Dash app allows you to keep track of the performance of various popular cryptocurrencies and track their price over time. 
 </p>
 
-<p>
+<p align="center">
   <a href="https://acmvit.in/" target="_blank">
     <img alt="made-by-acm" src="https://img.shields.io/badge/MADE%20BY-ACM%20VIT-blue?style=for-the-badge" />
   </a>
@@ -51,10 +51,6 @@ The Crypto Dash app allows you to keep track of the performance of various popul
   For additional guidelines, refer to [participation rules](https://hacktoberfest.digitalocean.com/details#rules)
 
 ---
-
-<!-- -_domain specific guidelines here_-
-  
---- -->
 ## Overview
 
 This project allows contributors to learn basic Flutter layout patterns using Grid, as well as making API calls and state management.
