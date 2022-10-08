@@ -52,12 +52,12 @@ The Crypto Dash app allows you to keep track of the performance of various popul
 
 ---
 
--_domain specific guidelines here_-
+<!-- -_domain specific guidelines here_-
   
----
+--- -->
 ## Overview
 
-The overview starts here. Random text about the project, motive, how, what, why etc.
+This project allows contributors to learn basic Flutter layout patterns using Grid, as well as making API calls and state management.
 
 ---
 ## Usage
