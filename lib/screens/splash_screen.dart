@@ -1,4 +1,8 @@
+// ignore_for_file: depend_on_referenced_packages
 import 'package:flutter/material.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:page_transition/page_transition.dart';
+import '../main.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -7,13 +11,19 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        title: const Text(""),
-      ),
-      body: const Center(
-        child: Text("Hello Spalsh Screeen"),
+      body: Center(
+        child: AnimatedSplashScreen(
+          splash: Image.asset(
+            'assets/logo/CryptoDash-logos_black.png',
+            width: 700,
+            height: 700,
+            color: Colors.red,
+          ),
+          nextScreen: const MyHomePage(),
+          duration: 3000,
+          splashTransition: SplashTransition.fadeTransition,
+          pageTransitionType: PageTransitionType.fade,
+        ),
       ),
     );
   }
