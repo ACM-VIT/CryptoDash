@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'currency_box.dart';
+import 'screens/Home.dart';
+import 'screens/Articles.dart';
+import 'screens/Profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Crypto Dashboard',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -20,28 +23,50 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _selectedIndex = 0;
+  List<Widget> Screens = [Home(), Article(), Profile()];
+  // This widget is the root of your application.
+  void tapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Crypto Dashboard"),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 200,
-            childAspectRatio: 3 / 2,
-            crossAxisSpacing: 20,
-            mainAxisSpacing: 20,
+      body: Screens.elementAt(_selectedIndex),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.blue,
+        unselectedItemColor: Colors.black87,
+        currentIndex: _selectedIndex,
+        onTap: tapped,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: "Home",
           ),
-          itemBuilder: (BuildContext ctx, index) {
-            return const CurrencyBox();
-          },
-          itemCount: 5,
-        ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.article),
+            label: "Articles",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: "Profile Page",
+          ),
+        ],
       ),
     );
   }
