@@ -60,6 +60,7 @@ This project allows contributors to learn basic Flutter layout patterns using Gr
 - Target PRs to the appropriate branch, such as api, ui, etc.
 - Upload a screenshot and screen recording while submitting a PR
 - Make a new file under lib/screens for each new screen, and for custom widgets, make a new file under lib/widgets
+- Do not commit your pubspec.lock file                                                                                             
 
 ---
 ## Usage
