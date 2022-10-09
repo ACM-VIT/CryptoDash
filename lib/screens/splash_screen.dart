@@ -13,6 +13,7 @@ class SplashScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Center(
         child: AnimatedSplashScreen(
+          splashIconSize: 300,
           splash: Image.asset(
             'assets/logo/CryptoDash-logos_black.png',
             width: 700,
