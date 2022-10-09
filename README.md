@@ -56,6 +56,12 @@ The Crypto Dash app allows you to keep track of the performance of various popul
 This project allows contributors to learn basic Flutter layout patterns using Grid, as well as making API calls and state management.
 
 ---
+## Domain Specific Guidelines
+- Target PRs to the appropriate branch, such as api, ui, etc.
+- Upload a screenshot and screen recording while submitting a PR
+- Make a new file under lib/screens for each new screen, and for custom widgets, make a new file under lib/widgets
+
+---
 ## Usage
 <!-- How To, Features, Installation etc. as subheadings in this section. example-->
 
