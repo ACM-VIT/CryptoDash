@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'currency_box.dart';
+import './currency_box.dart';
+import './screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Crypto Dashboard',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Crypto Dashboard ',
+      home: SplashScreen(),
     );
   }
 }
